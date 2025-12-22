@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Über uns | KOB Fenster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/logo_KOB.png" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="DINDECOR – Accueil">
+      <img src="assets/img/logo_KOB.png" alt="DINDECOR" class="brand-logo">
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="index.html">Startseite</a>
+      <a href="qui-sommes-nous.html" class="active">Über uns</a>
+      <div class="nav-item dropdown">
+        <button class="dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Katalog</button>
+        <div class="dropdown-menu" role="menu" aria-label="Katalog">
+          <a role="menuitem" href="porte.html">Türen</a>
+          <a role="menuitem" href="fenetre.html">Fenster</a>
+        </div>
+      </div>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème">🌙</button>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="container page">
+  <div class="about-hero">
+    <div>
+      <h1>Über uns</h1>
+      <p>KOB Fenster steht für Premium‑Türen und Fenster: modernes Design, hervorragende Isolation, präzise Verarbeitung und zuverlässige Montage – alles aus einer Hand.</p>
+      <div class="badges">
+        <span class="badge">Premium Qualität</span>
+        <span class="badge">Maßanfertigung</span>
+        <span class="badge">Lieferung & Montage</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">10+ Jahre</div><div class="label">Erfahrung</div></div>
+        <div class="stat"><div class="num">300+ Projekte</div><div class="label">abgeschlossen</div></div>
+        <div class="stat"><div class="num">4.9/5</div><div class="label">Kundenzufriedenheit</div></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="about-viewer">
+        <img id="about-main" class="about-main" src="assets/img/image1.PNG" alt="Produktfoto 1">
+        <div class="about-thumbs">
+          <img class="active" src="assets/img/image1.PNG" alt="Vorschau 1" data-src="assets/img/image1.PNG">
+          <img src="assets/img/image 2.PNG" alt="Vorschau 2" data-src="assets/img/image 2.PNG">
+          <img src="assets/img/image3.PNG" alt="Vorschau 3" data-src="assets/img/image3.PNG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="page" aria-label="Unternehmensbeschreibung">
+    <h2>Aus Leidenschaft zu Türen</h2>
+    <div class="tabs">
+      <div class="tablist" role="tablist" aria-label="Über DINDECOR">
+        <button class="tab-btn" id="tab-1" role="tab" aria-controls="panel-1" aria-selected="true">Mit uns</button>
+        <button class="tab-btn" id="tab-2" role="tab" aria-controls="panel-2" aria-selected="false" tabindex="-1">Technologien</button>
+        <button class="tab-btn" id="tab-3" role="tab" aria-controls="panel-3" aria-selected="false" tabindex="-1">Neue Produkte</button>
+      </div>
+      <div id="panel-1" class="tab-panel about-card" role="tabpanel" aria-labelledby="tab-1">
+        <h3>Sie können mehr mit uns</h3>
+        <p>KOB Fenster entwirft und fertigt hochwertige Türverkleidungen nach Ihrem Konzept und Wunsch. Von unserer Firma gefertigte Füllungen verleihen der Tür einen einzigartigen Charakter. Die Tür ist nicht nur der Eingang zum Haus, sondern auch eine Visitenkarte von jedem von uns. Sie spiegelt die Persönlichkeit und den individuellen Sinn für Ästhetik wider. Jeden Tag versuchen wir, die Erwartungen unserer Partner zu erfüllen, damit wir nach dem Image des Kunden und der Liebe zum kleinsten Detail produzieren.</p>
+      </div>
+      <div id="panel-2" class="tab-panel about-card" role="tabpanel" aria-labelledby="tab-2" hidden>
+        <h3>Die höchste Qualität kann nur erreicht werden, wenn die neuesten Technologien verwendet werden</h3>
+        <p>KOB Fenster produziert Füllungen auf Basis der neuesten Technologien. Mit einem Hightech‑Maschinenpark, unter anderem CNC‑Maschinen, und moderner Pulverbeschichtung erreichen wir die höchste Qualität unserer Produkte. Dies wäre natürlich nicht möglich ohne qualifiziertes Personal, das die Aufmerksamkeit für jedes Detail garantiert und dazu beiträgt, die gewünschte Ästhetik des Endprodukts zu erreichen. Dank der Handarbeit hat der Kunde die Freiheit, verschiedene Designs, Anwendungen, Verglasungen und viele andere Materialien zu wählen, um seine Tür einzigartig zu machen.</p>
+      </div>
+      <div id="panel-3" class="tab-panel about-card" role="tabpanel" aria-labelledby="tab-3" hidden>
+        <h3>Neue Produkte im Angebot</h3>
+        <p>Wir präsentieren Ihnen die Premium+ Linie, in der Sie eine Reihe neuer Designs und Materialien finden, die wir darin verwendet haben. Das Angebot wurde basierend auf den Anforderungen unserer Kunden sowie den neuesten Markttrends erstellt. Neu sind Füllungen mit einer Oberfläche aus Naturstein, Beton oder gehärtetem Schwarzglas. Zusätzlich kann das Inox‑Inlay durch eine 3D‑Stahlanwendung ersetzt werden. Das Angebot wurde durch vertiefte Griffe in Füllungsfarbe bereichert.</p>
+      </div>
+    </div>
+  </section>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Unsere Mission</h3>
+      <p>Ästhetik, Leistung und Langlebigkeit vereinen – für mehr Wert in Ihrem Zuhause.</p>
+    </div>
+    <div class="about-card">
+      <h3>Unsere Werte</h3>
+      <p>Beratung, Transparenz und kompromisslose Qualität von Anfang bis Ende.</p>
+    </div>
+    <div class="about-card">
+      <h3>Warum DINDECOR?</h3>
+      <ul>
+        <li>Zertifizierte Produkte mit Herstellergarantie</li>
+        <li>Montage durch qualifizierte Techniker</li>
+        <li>Schneller, verlässlicher Support</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>KOB Fenster</strong>
+      <p>Türen & Fenster • Premium‑Linie</p>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.85 22 2 13.15 2 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+        <a href="tel:+491729813603">+49 172 9813603</a>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2l-8 5L4 6h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+        <a href="mailto:kob.fenster@outlook.de">kob.fenster@outlook.de</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="index.html">Startseite</a>
+      <a href="qui-sommes-nous.html">Über uns</a>
+      <a href="porte.html">Türen</a>
+      <a href="fenetre.html">Fenster</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> KOB Fenster. Alle Rechte vorbehalten. • Entwickelt von Ala Ben Daoud</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+  (function(){
+    const main = document.getElementById('about-main');
+    const thumbs = document.querySelectorAll('.about-thumbs img');
+    if(main && thumbs.length){
+      thumbs.forEach(t => t.addEventListener('click', () => {
+        const src = t.getAttribute('data-src');
+        if(!src) return;
+        main.src = src;
+        main.alt = t.alt.replace('Vorschau', 'Produktfoto');
+        thumbs.forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+      }));
+    }
+  })();
+</script>
+<script>
+  (function(){
+    const tabs = Array.from(document.querySelectorAll('.tab-btn'));
+    if(!tabs.length) return;
+    const idToIndex = { 'mit-uns':0, 'technologien':1, 'neue-produkte':2 };
+    const indexToHash = ['mit-uns','technologien','neue-produkte'];
+
+    function showPanel(i){
+      tabs.forEach((t,idx)=>{
+        const selected = idx===i;
+        t.setAttribute('aria-selected', String(selected));
+        if(selected) t.removeAttribute('tabindex'); else t.setAttribute('tabindex','-1');
+        const panelId = t.getAttribute('aria-controls');
+        const panel = document.getElementById(panelId);
+        if(!panel) return;
+        if(selected){
+          panel.hidden = false;
+          panel.classList.add('fade-start');
+          requestAnimationFrame(()=>{
+            panel.classList.add('fade-in');
+            panel.classList.remove('fade-start');
+          });
+        }else{
+          panel.classList.remove('fade-in');
+          panel.hidden = true;
+        }
+      });
+    }
+
+    function activate(i, pushHash=true){
+      const idx = Math.max(0, Math.min(i, tabs.length-1));
+      showPanel(idx);
+      if(pushHash){
+        const h = '#'+indexToHash[idx];
+        if(location.hash !== h) history.replaceState(null, '', h);
+      }
+      tabs[idx].focus();
+    }
+
+    tabs.forEach((t, i)=>{
+      t.addEventListener('click', ()=> activate(i));
+      t.addEventListener('keydown', (e)=>{
+        const k=e.key;
+        if(k==='ArrowRight' || k==='ArrowDown'){ e.preventDefault(); activate((i+1)%tabs.length); }
+        else if(k==='ArrowLeft' || k==='ArrowUp'){ e.preventDefault(); activate((i-1+tabs.length)%tabs.length); }
+        else if(k==='Home'){ e.preventDefault(); activate(0); }
+        else if(k==='End'){ e.preventDefault(); activate(tabs.length-1); }
+      });
+    });
+
+    // Initialize from hash
+    const initial = location.hash.replace('#','');
+    if(initial && initial in idToIndex) activate(idToIndex[initial], false); else activate(0, true);
+
+    // Respond to hash changes (e.g., back/forward navigation)
+    window.addEventListener('hashchange', ()=>{
+      const h = location.hash.replace('#','');
+      if(h in idToIndex) activate(idToIndex[h], false);
+    });
+  })();
+</script>
+</body>
+</html>

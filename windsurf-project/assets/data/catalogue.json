@@ -1,0 +1,26 @@
+[
+  {
+    "id":"mexus-3201",
+    "nom":"Mexus 3201",
+    "type":"porte",
+    "collection":"premium",
+    "image":"assets/img/doors/port1.PNG",
+    "couleurs":["gris anthracite","blanc","noir"]
+  },
+  {
+    "id":"mexus-1101",
+    "nom":"Mexus 1101",
+    "type":"porte",
+    "collection":"premium",
+    "image":"assets/img/doors/port1.PNG",
+    "couleurs":["gris clair","bois","noir"]
+  },
+  {
+    "id":"fen-elite-01",
+    "nom":"Fenêtre Elite 01",
+    "type":"fenetre",
+    "collection":"classic",
+    "image":"assets/img/samples/fenetre-01.jpg",
+    "couleurs":["blanc","gris"]
+  }
+]
