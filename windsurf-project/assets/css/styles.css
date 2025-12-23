@@ -97,29 +97,29 @@ img{max-width:100%; display:block}
 .grid-card .media{width:100%; height:140px}
 .grid-card img.media{width:100%; height:140px; object-fit:contain; display:block; background:#0b0f14}
 .grid-card .caption{padding:8px 10px; background:rgba(0,0,0,.15); border-top:1px solid var(--outline); flex:1}
-.grid-card .caption h4{margin:0 0 4px; font-size:1rem}
 .grid-card .caption p{margin:0; color:var(--muted); font-size:.9rem; line-height:1.3}
-
 .grid-card .caption .spec-list{list-style:none; margin:10px 0 0; padding:0; color:var(--text); font-size:.92rem; line-height:1.35}
 .grid-card .caption .spec-list li{padding:6px 0; border-top:1px solid rgba(255,255,255,.08)}
 .grid-card .caption .spec-list li:first-child{border-top:0}
 
-.fenetre-page .fenetre-header{display:flex; flex-direction:column; gap:10px; margin:6px 0 20px}
-.fenetre-page .fenetre-header h1{margin:0; letter-spacing:.02em}
-.fenetre-page .badges{margin:0}
+.fenster-page .fenster-header{position:relative; display:flex; align-items:center; justify-content:flex-start; gap:14px; margin:6px 0 20px}
+.fenster-page .fenster-header h1{margin:0; letter-spacing:.02em}
+.fenster-page .badges{position:absolute; left:50%; transform:translateX(-50%); margin:0}
 
-.fenetre-page .grid-showcase{grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; padding:10px 0 60px}
-.fenetre-page .grid-card{border-radius:18px; border-color:rgba(255,255,255,.10); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(2,18,27,.22)); box-shadow:0 18px 40px rgba(0,0,0,.35); transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease}
-.fenetre-page .grid-card:hover{transform:translateY(-2px); border-color:rgba(var(--brand-rgb), .55); box-shadow:0 22px 52px rgba(0,0,0,.45)}
-.fenetre-page .grid-card img.media{height:220px; background:radial-gradient(60% 60% at 50% 10%, rgba(var(--brand-rgb),.16), transparent 55%), #07090d}
-.fenetre-page .grid-card .caption{padding:14px 14px 16px; background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.30))}
-.fenetre-page .grid-card .caption h4{font-size:1.05rem; margin-bottom:6px}
-.fenetre-page .grid-card .caption p{font-size:.95rem}
-.fenetre-page .grid-card .caption .spec-list{margin-top:12px; font-size:.93rem}
-.fenetre-page .grid-card .caption .spec-list li{border-top:1px solid rgba(255,255,255,.10); padding:8px 0}
+.fenster-page .grid-showcase{grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; padding:10px 0 60px}
+.fenster-page .grid-card{border-radius:18px; border-color:rgba(255,255,255,.10); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(2,18,27,.22)); box-shadow:0 18px 40px rgba(0,0,0,.35); transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease}
+.fenster-page .grid-card:hover{transform:translateY(-2px); border-color:rgba(var(--brand-rgb), .55); box-shadow:0 22px 52px rgba(0,0,0,.45)}
+.fenster-page .grid-card img.media{height:220px; background:radial-gradient(60% 60% at 50% 10%, rgba(var(--brand-rgb),.16), transparent 55%), #07090d}
+.fenster-page .grid-card .caption{padding:14px 14px 16px; background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.30))}
+.fenster-page .grid-card .caption h4{font-size:1.05rem; margin-bottom:6px}
+.fenster-page .grid-card .caption p{font-size:.95rem}
+.fenster-page .grid-card .caption .spec-list{margin-top:12px; font-size:.93rem}
+.fenster-page .grid-card .caption .spec-list li{border-top:1px solid rgba(255,255,255,.10); padding:8px 0}
 
 @media (max-width: 900px){
-  .fenetre-page .grid-showcase{grid-template-columns:1fr}
+  .fenster-page .grid-showcase{grid-template-columns:1fr}
+  .fenster-page .fenster-header{flex-direction:column; align-items:flex-start; gap:10px}
+  .fenster-page .badges{position:static; transform:none}
 }
 
 /* Page */
@@ -143,6 +143,9 @@ img{max-width:100%; display:block}
 .about-hero p{margin:0; color:var(--muted); font-size:1.05rem}
 .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
 .badge{padding:8px 12px; border-radius:999px; border:1px solid var(--outline); background:var(--bg-soft); color:var(--text); font-weight:600}
+.fenster-page .badges .badge,
+.fenetre-page .badges .badge{background:transparent; border:0; padding:0; border-radius:0; color:var(--brand); font-weight:800; letter-spacing:.12em; text-transform:uppercase; line-height:1}
+.fenster-page .fenster-header .badges .badge{font-size:1.5rem}
 .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:18px}
 .stat{background:var(--card); border:1px solid var(--outline); border-radius:14px; padding:14px; text-align:center}
 .stat .num{font-weight:800; font-size:24px; color:var(--primary)}
