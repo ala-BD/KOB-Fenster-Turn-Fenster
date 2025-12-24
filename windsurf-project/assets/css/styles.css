@@ -107,8 +107,13 @@ img{max-width:100%; display:block}
 .fenster-page .badges{position:absolute; left:50%; transform:translateX(-50%); margin:0}
 
 .fenster-page .grid-showcase{grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; padding:10px 0 60px}
-.fenster-page .grid-card{border-radius:18px; border-color:rgba(255,255,255,.10); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(2,18,27,.22)); box-shadow:0 18px 40px rgba(0,0,0,.35); transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease}
-.fenster-page .grid-card:hover{transform:translateY(-2px); border-color:rgba(var(--brand-rgb), .55); box-shadow:0 22px 52px rgba(0,0,0,.45)}
+.fenster-page .grid-card{border-radius:18px; border-color:rgba(255,255,255,.10); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(2,18,27,.22)); box-shadow:0 18px 40px rgba(0,0,0,.35); transition:none}
+/* MODIFICATION ICI : Suppression des effets de survol pour les cartes fenêtre */
+.fenster-page .grid-card:hover{
+  transform: none;
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
 .fenster-page .grid-card img.media{height:220px; background:radial-gradient(60% 60% at 50% 10%, rgba(var(--brand-rgb),.16), transparent 55%), #07090d}
 .fenster-page .grid-card .caption{padding:14px 14px 16px; background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.30))}
 .fenster-page .grid-card .caption h4{font-size:1.05rem; margin-bottom:6px}
